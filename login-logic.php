@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
                 
 
                 //log user in
-                header('location: ' . ROOT_URL . 'index.php');
+                header('location: ' . ROOT_URL . 'index.html');
                 
             }
             else{
