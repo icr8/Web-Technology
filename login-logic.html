@@ -51,13 +51,13 @@ if(isset($_POST['submit'])){
         //pass from data back to signup page
         $_SESSION['signin-data'] = $_POST;
         
-        header('location: ' . ROOT_URL . 'Login.php');
+        header('location: ' . ROOT_URL . 'Login.html');
         die(); 
     }
     
 } 
 else{
-    header('location: ' . ROOT_URL . 'Login.php');
+    header('location: ' . ROOT_URL . 'Login.html');
     die();
 
     
