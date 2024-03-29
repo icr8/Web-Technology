@@ -41,7 +41,7 @@
 
     
 
-    <form action="<?= ROOT_URL ?>login-logic.html" enctype="multipart/form-data" id="form" style="align-items: center; text-align: center; margin-top: 200px;" method="POST">
+    <form action="<?php echo ROOT_URL ?>login-logic.html" enctype="multipart/form-data" id="form" style="align-items: center; text-align: center; margin-top: 200px;" method="POST">
     
     <!-- sucess and error message -->
     <?php if(isset($_SESSION['signup-success'])) : ?>
@@ -67,7 +67,7 @@
     
         <div class="container">
           <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="username" value="<?= $username ?>" style="padding: 5px; opacity: 0.6;">
+          <input type="text" placeholder="Enter Username" name="username" value="<?phph echo  $username ?>" style="padding: 5px; opacity: 0.6;">
         <div style="padding: 15px;">
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" value="<?= $password ?>" required style="padding: 5px; opacity: 0.6;">
